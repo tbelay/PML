@@ -1,0 +1,26 @@
+---
+title: "Practical Machine Learning project - Writeup"
+author: "Tesfaye Belay"
+date: "November 22, 2015"
+output: html_document
+---
+
+
+
+```{r}
+  library(caret)
+  require(randomForest)
+  library(ggplot2) 
+```
+
+ reading the files
+
+```{r, echo=FALSE}
+
+E:/Coursera/Practical_machine_learning
+trainingdata<- read.csv("E:/Coursera/Practical_machine_learning/pml-training.csv", na.strings=c("NA",""))
+testingdata<- read.csv("E:\Coursera\Practical_machine_learning/pml-testing.csv", na.strings=c("NA",""))
+
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
